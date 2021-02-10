@@ -1,0 +1,28 @@
+/**A sintaxe do css funciona da seguinte forma: Voce escolhe o elemente do hmtl que quer modificar e poe aqui no css. O primeiro caso abaixo é o body**/
+body{
+    
+    width: 95%;
+    max-width: 500px;
+    margin: auto; /**Para centralização do texto na pagina**/
+    font-family: 'Lato', sans-serif; /**Tipo de fonta das letras**/
+    line-height: 1.5; /**Espaçamento entre as linhas**/
+    color: #ff0000; /*Cor da fonte*/
+
+    background: url(trees.jpg) center; /*Imagem de fundo do site. center para centralizar a imagem*/
+    background-attachment: fixed; /*Comando para fazer com que a imagem não duplique com os zoons*/
+    background-size: 100%; /*Comando para a imagem se adptar ao tamanho da tela*/
+
+}
+
+main{
+    background: #00000054; /*Configuração do quadrado opaco do meio*/
+    padding: 5px 40px; /*centralização da borda opaca*/
+    margin-top: 20px; /*espaçamento da barra opaca da margem do topo*/
+    margin-bottom: 20px;/*espaçamento da barra opaca da margem de baixo*/
+    border-radius: 10px;
+}
+
+.logo{
+    text-align: center; /*Centralizando a imagem logo*/
+    
+}
