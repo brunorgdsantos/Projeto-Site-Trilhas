@@ -3,27 +3,33 @@ body{
     background: url(imagens/branco.jpg) center; /*Imagem de fundo do site. center para centralizar a imagem*/
     background-attachment: fixed; /*Comando para fazer com que a imagem não duplique com os zoons*/
     background-size: 100%; /*Comando para a imagem se adptar ao tamanho da tela*/
+
+    display: flex; /*configuração de centralização do slideshow*/
+    flex-direction: center; /*configuração de centralização do slideshow*/
+    justify-content: center; /*configuração de centralização do slideshow*/
+    align-items: center; /*configuração de centralização do slideshow*/
 }
 
 main{
-    width: 95%;
+    /**RETIRADO TEMPORARIAMENTE PARA CONFIGURAÇÃO DO SLIDESHOW
+    /** width: 95%;
     max-width: 500px;
     margin: auto; /**Para centralização do texto na pagina**/
-    font-family: 'Lato', sans-serif; /**Tipo de fonta das letras**/
-    line-height: 1.5; /**Espaçamento entre as linhas**/
-    color: #ff0000; /*Cor da fonte*/
+    /** font-family: 'Lato', sans-serif; /**Tipo de fonta das letras**/
+    /** line-height: 1.5; /**Espaçamento entre as linhas**/
+    /** color: #ff0000; /*Cor da fonte*/
 
-    background: #00000054; /*Configuração do quadrado opaco do meio*/
-    padding: 5px 40px; /*centralização da borda opaca*/
-    margin-top: 20px; /*espaçamento da barra opaca da margem do topo*/
-    margin-bottom: 20px;/*espaçamento da barra opaca da margem de baixo*/
-    border-radius: 10px;/*bordas arredondadas da barra opaca*/
+    /** background: #00000054; /*Configuração do quadrado opaco do meio*/
+    /** padding: 5px 40px; /*centralização da borda opaca*/
+    /** margin-top: 20px; /*espaçamento da barra opaca da margem do topo*/
+    /** margin-bottom: 20px;/*espaçamento da barra opaca da margem de baixo*/
+    /** border-radius: 10px;/*bordas arredondadas da barra opaca*/
 }
 
 .logo{
     /*text-align: center;Centralizando a imagem logo*/
-    width: 200px; /*Largura da imagem*/
-    height: 200px;/*Altura da imagem*/
+    width: 100px; /*Largura da imagem*/
+    height: 100px;/*Altura da imagem*/
     position: absolute; /*Ponto de referencia da logo, canto superior esquerdo*/
     left: 10px;/*posicao*/
     top: 10px;/*posicao*/
@@ -33,4 +39,26 @@ main{
     position: absolute;
     left: 1100px;
     top: 50px;
+}
+
+#slider {/*Configurando o slideshow*/
+    width: 500px;/*Centralização do slideshow*/
+    height: 25vw;/*Altura do slideshow*/
+    max-height: 500px; /*Altura do slideshow*/
+    width: 2000px;/*Largura do slideshow de canto a canto da tela*/
+    position:relative;
+    top: 150px;/*posicao*/
+}
+
+#slider img{/*Configurando as imagens*/
+    position:absolute;/*Poe uma imagem por cima da outra, centralizando-as em um só lugar*/
+    width: 100%; /*Largura das imagns*/
+    height: 100%; /*Altura das imagens*/
+    object-fit:cover;/*Permite que as imagens não percam a qualidade*/
+    opacity: 0;/*Desaparecimento das imagens*/
+    transition: opacity 800ms;/*velocidade de mudança das imagens*/
+}
+
+#slider img.selected{
+    opacity: 1;
 }
