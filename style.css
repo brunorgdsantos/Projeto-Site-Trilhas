@@ -11,13 +11,15 @@ body{
 }
 
 main{
-    /**RETIRADO TEMPORARIAMENTE PARA CONFIGURAÇÃO DO SLIDESHOW
-    /** width: 95%;
+    width: 95%;
     max-width: 500px;
     margin: auto; /**Para centralização do texto na pagina**/
-    /** font-family: 'Lato', sans-serif; /**Tipo de fonta das letras**/
-    /** line-height: 1.5; /**Espaçamento entre as linhas**/
-    /** color: #ff0000; /*Cor da fonte*/
+    font-family: 'Lato', sans-serif; /**Tipo de fonta das letras**/
+    line-height: 1.5; /**Espaçamento entre as linhas**/
+    color: #ff0000; /*Cor da fonte*/
+    position: absolute; /*Centralização do texto*/
+    left: 500px;/*posicao*/
+    top: 0px;/*posicao*/
 
     /** background: #00000054; /*Configuração do quadrado opaco do meio*/
     /** padding: 5px 40px; /*centralização da borda opaca*/
@@ -61,4 +63,53 @@ main{
 
 #slider img.selected{
     opacity: 1;
+}
+
+.bike img{ /*Lembre-se, como essas configurações referen-se a imagem, poe-se o img*/
+    
+    width: 50px; /*Largura das imagns. Sempre tenha cuidado com as unidades de medida*/
+    height: 50px; /*Altura das imagens. Sempre tenha cuidado com as unidades de medida*/
+    position:absolute; /*Ponto de referencia da logo, canto superior esquerdo*/
+    left: 120px;/*posicao*/
+    top: 110px;/*posicao*/
+}
+
+.trilheiro img{
+    width: 40px; /*Largura das imagns. Sempre tenha cuidado com as unidades de medida*/
+    height: 50px; /*Altura das imagens. Sempre tenha cuidado com as unidades de medida*/
+    position:absolute; /*Ponto de referencia da logo, canto superior esquerdo*/
+    left: 180px;/*posicao*/
+    top: 110px;/*posicao*/
+}
+
+.corrida img{
+    width: 40px; /*Largura das imagns. Sempre tenha cuidado com as unidades de medida*/
+    height: 40px; /*Altura das imagens. Sempre tenha cuidado com as unidades de medida*/
+    position:absolute; /*Ponto de referencia da logo, canto superior esquerdo*/
+    left: 230px;/*posicao*/
+    top: 115px;/*posicao*/
+}
+
+.motanha img{
+    width: 40px; /*Largura das imagns. Sempre tenha cuidado com as unidades de medida*/
+    height: 40px; /*Altura das imagens. Sempre tenha cuidado com as unidades de medida*/
+    position:absolute; /*Ponto de referencia da logo, canto superior esquerdo*/
+    left: 290px;/*posicao*/
+    top: 115px;/*posicao*/
+}
+
+.motocross img{
+    width: 40px; /*Largura das imagns. Sempre tenha cuidado com as unidades de medida*/
+    height: 40px; /*Altura das imagens. Sempre tenha cuidado com as unidades de medida*/
+    position:absolute; /*Ponto de referencia da logo, canto superior esquerdo*/
+    left: 350px;/*posicao*/
+    top: 115px;/*posicao*/
+}
+
+.barco img{
+    width: 40px; /*Largura das imagns. Sempre tenha cuidado com as unidades de medida*/
+    height: 40px; /*Altura das imagens. Sempre tenha cuidado com as unidades de medida*/
+    position:absolute; /*Ponto de referencia da logo, canto superior esquerdo*/
+    left: 410px;/*posicao*/
+    top: 115px;/*posicao*/
 }
