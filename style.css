@@ -10,22 +10,34 @@ body{
     align-items: center; /*configuração de centralização do slideshow*/
 }
 
-main{
+.textosecundario{
     width: 95%;
     max-width: 500px;
     margin: auto; /**Para centralização do texto na pagina**/
     font-family: 'Lato', sans-serif; /**Tipo de fonta das letras**/
-    line-height: 1.5; /**Espaçamento entre as linhas**/
-    color: #ff0000; /*Cor da fonte*/
+    line-height: 1.0; /**Espaçamento entre as linhas**/
+    color: #0a0a0a; /*Cor da fonte*/
     position: absolute; /*Centralização do texto*/
     left: 500px;/*posicao*/
-    top: 0px;/*posicao*/
+    top: 50px;/*posicao*/
+    text-align: justify;/*Para justificar o texto*/
+    font-size: 15px;/*Tamanho da fonte do texto*/
 
     /** background: #00000054; /*Configuração do quadrado opaco do meio*/
     /** padding: 5px 40px; /*centralização da borda opaca*/
     /** margin-top: 20px; /*espaçamento da barra opaca da margem do topo*/
     /** margin-bottom: 20px;/*espaçamento da barra opaca da margem de baixo*/
     /** border-radius: 10px;/*bordas arredondadas da barra opaca*/
+}
+
+.textoinicial{
+    width: 95%;
+    max-width: 500px;
+    margin: auto; /**Para centralização do texto na pagina**/
+    font-family: 'roboto', sans-serif; /**Tipo de fonta das letras**/
+    position: absolute; /*Centralização do texto*/
+    left: 500px;/*posicao*/
+    top: 0px;/*posicao*/
 }
 
 .logo{
@@ -37,10 +49,45 @@ main{
     top: 10px;/*posicao*/
 }
 
-.butaoentrar{
+.botaoentrar{
     position: absolute;
     left: 1100px;
     top: 50px;
+    font-family: 'roboto';/*Fonte das letras*/
+    user-select: none; /*Para parar de selecionar, quando voce tentar copiar o texto*/
+    cursor: pointer;/*Para aparecer o cursor*/
+}
+
+.botaoentrar a{/*Tirando o sublinhado do link do href*/
+    text-decoration: none;/*none = nenhum*/
+    color: #0a0a0a; /*Cor da font, se voce tentar mudar a cor da palavra sem especificar a{}, não vai dar certo*/
+}
+
+.botaoentrar:hover {/*Mudanças quando o cursor passar por cima, nesse caso irá aparecer um sublinhado apenas quando o curso do mouse passar por cima da palavra*/
+    text-decoration: underline;
+}
+
+.botaoincreverse{
+    position: absolute;
+    left: 1150px; /*posição, para esquerda ou direita*/
+    top: 40px;/*posição, para cima ou baixo*/ 
+    background-color: #ffa300;/*Cor do quadrado ao redor da letra*/
+    border: 10px solid #ffa300;/*Cor da borda do quadrado*/
+    border-radius: 5px;/*Arredondamento das bordas do quadrado*/
+    text-align: center;/*Centralização do texto no quadrado*/
+    user-select: none; /*Para parar de selecionar, quando voce tentar copiar o texto*/
+    cursor: pointer;/*Para aparecer o cursor*/
+    font-family: 'roboto';/*Fonte das letras*/
+}
+
+.botaoincreverse:hover{ /*Aqui vão as auterações de mudança de cor quando o cursor passar por cima da letra*/
+    background-color: rgb(187, 175, 175);/*Cor do quadrado quando o cursor passar por cima*/
+    border: 10px solid rgb(187, 175, 175);/*Cor da borda do quadrado*/
+}
+
+.botaoincreverse a{/*Tirando o sublinhado do link do href*/
+    text-decoration: none; /*none = nenhum*/
+    color: #ffffff; /*Cor da font, se voce tentar mudar a cor da palavra sem especificar a{}, não vai dar certo*/
 }
 
 #slider {/*Configurando o slideshow*/
