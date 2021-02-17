@@ -16,7 +16,7 @@ body{
     margin: auto; /**Para centralização do texto na pagina**/
     font-family: 'Lato', sans-serif; /**Tipo de fonta das letras**/
     line-height: 1.0; /**Espaçamento entre as linhas**/
-    color: #0a0a0a; /*Cor da fonte*/
+    color: #6b6262; /*Cor da fonte*/
     position: absolute; /*Centralização do texto*/
     left: 500px;/*posicao*/
     top: 50px;/*posicao*/
@@ -81,8 +81,8 @@ body{
 }
 
 .botaoincreverse:hover{ /*Aqui vão as auterações de mudança de cor quando o cursor passar por cima da letra*/
-    background-color: rgb(187, 175, 175);/*Cor do quadrado quando o cursor passar por cima*/
-    border: 10px solid rgb(187, 175, 175);/*Cor da borda do quadrado*/
+    background-color: rgb(218, 166, 63);/*Cor do quadrado quando o cursor passar por cima*/
+    border: 10px solid rgb(218, 166, 63);/*Cor da borda do quadrado*/
 }
 
 .botaoincreverse a{/*Tirando o sublinhado do link do href*/
@@ -91,10 +91,10 @@ body{
 }
 
 #slider {/*Configurando o slideshow*/
-    width: 500px;/*Centralização do slideshow*/
+    width: 100%;/*Centralização do slideshow*/
     height: 25vw;/*Altura do slideshow*/
     max-height: 500px; /*Altura do slideshow*/
-    width: 2000px;/*Largura do slideshow de canto a canto da tela*/
+    /*width: 2000px;/*Largura do slideshow de canto a canto da tela*/
     position:relative;
     top: 150px;/*posicao*/
 }
@@ -159,4 +159,17 @@ body{
     position:absolute; /*Ponto de referencia da logo, canto superior esquerdo*/
     left: 410px;/*posicao*/
     top: 115px;/*posicao*/
+}
+
+.contagem{
+    background: #4c8c2b; /*Configuração do quadrado verde de contagem de acessos*/
+    width: 98.8%;/*Largura do quadrado de contagem de acessos, o 100% permite que a imagens se adeque perfeitamente ao tamanho da tela, permitindo diminuir ou aumentar seguind o estado da tela*/
+    height: 180px;/*Altura do quadrado de contagem de acessos*/
+    position: absolute;/*posição do quadrado de contagem de acessos*/
+    top: 483px; /*Posição deixo ou cima do quadrado de contagem de acessos*/
+}
+
+.contagem a{
+    text-align: justify;/*Para justificar o texto*/
+    font-size: 13px;/*Tamanho da fonte do texto*/
 }
