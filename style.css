@@ -171,5 +171,47 @@ body{
 
 .contagem a{
     text-align: justify;/*Para justificar o texto*/
-    font-size: 13px;/*Tamanho da fonte do texto*/
+    font-family: 'roboto', sans-serif;/*Fonte*/
+    font-size: 11px;/*Tamanho da fonte do texto*/
+    line-height: 1.5; /**Espaçamento entre as linhas**/
+    position: absolute; /*Posição*/
+    left: 700px;/*Posição para esquerda*/
+    right: 10px;/*Posição para direita*/
+    top: 25px;/*Posição para baixo*/
+    color:#ffffff;/*Cor da fonte*/
+}
+
+.participe{
+    position: absolute;/*Posição*/
+    left: 710px;/*Posição para esquerda*/
+    right: 0px;/*Posição para direita*/
+    top: 630px;/*Posição para baixo*/
+    font-family: 'roboto';/*Fonte das letras*/
+    color:#ffffff;/*Cor da fonte*/
+    font-size: 20px;/*Tamanho da fonte do texto*/
+}
+
+.participe a{
+    color: #ffffff;/*Cor da font, se voce tentar mudar a cor da palavra sem especificar a{}, não vai dar certo*/
+
+}
+
+.bordaloc{
+    background: #d1c9c9;/*Configuração do quadrado branco da localização*/
+    position: absolute;/*posição do quadrado da localização*/
+    width: 50%;/*Largura do quadrado de contagem de acessos, o 100% permite que a imagens se adeque perfeitamente ao tamanho da tela, permitindo diminuir ou aumentar seguind o estado da tela*/
+    height: 130px;/*Altura do quadrado de contagem de acessos*/
+    top: 665px;/*Posição para baixo*/
+    left: 150px;/*Posição para direita*/    
+    font-family: 'roboto' sans-serif;/*Fonte das letras*/
+}
+
+.bordaloc2{
+    background: #8f8888;/*Configuração do quadrado branco da localização*/
+    position: absolute;/*posição do quadrado da localização*/
+    width: 30%;/*Largura do quadrado de contagem de acessos, o 100% permite que a imagens se adeque perfeitamente ao tamanho da tela, permitindo diminuir ou aumentar seguind o estado da tela*/
+    height: 130px;/*Altura do quadrado de contagem de acessos*/
+    top: 665px;/*Posição para baixo*/
+    left: 750px;/*Posição para direita*/    
+    
 }
