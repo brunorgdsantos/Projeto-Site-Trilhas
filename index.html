@@ -31,9 +31,9 @@
 
     <div class="textosecundario">
         <!--os H's são titulos, usado para titulos, porem h1 sera mostado na pagina-->
-        <h2>My Adventure é um lugar para descobrir e compartilhar as melhores trilhas ao ar livre para caminhadas,
+        <p>My Adventure é um lugar para descobrir e compartilhar as melhores trilhas ao ar livre para caminhadas,
             ciclismo
-            e muitas outras atividades</h2>
+            e muitas outras atividades</p>
     </div>
 
     <img src="imagens/logoicon2.png" alt="logo" div class="logo">
@@ -44,7 +44,7 @@
         <a href="https://pt.wikiloc.com/">Entrar</a>
     </div>
 
-    <div class="botaoincreverse">
+    <div class="botaoiscreverse">
         <a href="https://pt.wikiloc.com/">Increver-se</a>
     </div>
 
@@ -109,11 +109,16 @@
 
     <div class="contagem">
         <!--Configurando a barra de contagem de acesso do site-->
-        <a>
-            <h1>Já somos 7.649.437 membros explorando e compartilhando 21.625.022 trilhas ao ar livre e 38.152.945
+        <div class="cont">
+            <p>Já somos 7.649.437 membros explorando e compartilhando 21.625.022 trilhas ao ar livre e 38.152.945
                 fotos.
-            </h1>
-        </a>
+            </p>
+        </div>
+    </div>
+
+    <div class="numeros">
+        <!--Configurando a imagens de contagem de acessos do site-->
+        <img src="imagens/numeros.jpeg" alt="numero">
     </div>
 
     <div class="participe">
@@ -123,13 +128,35 @@
 
     <div class="bordaloc">
         <!--Configurando o o background da localização da pagina-->
-        <h1>Descubra novas trilhas
+        <h1 id="textopesquisa">Descubra novas trilhas
         </h1>
     </div>
 
-    <div class="bordaloc2">
-        <!--Configurando o o background dois da localização da pagina-->
+    <form class="pesquisa">
+        <!--Configurando a barra de "Pesquisar Trilhas" da pagina-->
+
+        <div class="barrapesquisa">
+            <img src="imagens/search.svg" class="imglupa">
+            <input type="text" class="pesq">
+            <!--O formulario sera do tipo texto (seach), se type = submit, sera um botão-->
+        </div>
+
+    </form>
+
+    <div class="textoexplorar">
+        <h2>ou</h2>
+        <a href="https://pt.wikiloc.com/">Explorar</a>
     </div>
+
+    <div class="CarregueSuaTrilha">
+        <h2>Mostre suas trilhas favoritas</h2>
+    </div>
+
+    <div class="BackGroundCarregueSuaTrilha">
+        <a href="https://pt.wikiloc.com/">Carregue sua trilha</a>
+        <img src="imagens/cloud.svg" class="nuvem">
+    </div>
+
 </body>
 
 </html>

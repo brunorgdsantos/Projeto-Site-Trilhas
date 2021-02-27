@@ -8,10 +8,11 @@ body{
     flex-direction: center; /*configuração de centralização do slideshow*/
     justify-content: center; /*configuração de centralização do slideshow*/
     align-items: center; /*configuração de centralização do slideshow*/
+    
 }
 
 .textosecundario{
-    width: 95%;
+    width: 100%;
     max-width: 500px;
     margin: auto; /**Para centralização do texto na pagina**/
     font-family: 'Lato', sans-serif; /**Tipo de fonta das letras**/
@@ -19,9 +20,9 @@ body{
     color: #6b6262; /*Cor da fonte*/
     position: absolute; /*Centralização do texto*/
     left: 500px;/*posicao*/
-    top: 50px;/*posicao*/
+    top: 45px;/*posicao*/
     text-align: justify;/*Para justificar o texto*/
-    font-size: 15px;/*Tamanho da fonte do texto*/
+    font-size: 25px;/*Tamanho da fonte do texto*/
 
     /** background: #00000054; /*Configuração do quadrado opaco do meio*/
     /** padding: 5px 40px; /*centralização da borda opaca*/
@@ -67,7 +68,7 @@ body{
     text-decoration: underline;
 }
 
-.botaoincreverse{
+.botaoiscreverse{
     position: absolute;
     left: 1150px; /*posição, para esquerda ou direita*/
     top: 40px;/*posição, para cima ou baixo*/ 
@@ -80,12 +81,13 @@ body{
     font-family: 'roboto';/*Fonte das letras*/
 }
 
-.botaoincreverse:hover{ /*Aqui vão as auterações de mudança de cor quando o cursor passar por cima da letra*/
+.botaoiscreverse:hover{ /*Aqui vão as auterações de mudança de cor quando o cursor passar por cima da letra*/
     background-color: rgb(218, 166, 63);/*Cor do quadrado quando o cursor passar por cima*/
     border: 10px solid rgb(218, 166, 63);/*Cor da borda do quadrado*/
+    text-decoration: none; /*none = nenhum*/
 }
 
-.botaoincreverse a{/*Tirando o sublinhado do link do href*/
+.botaoiscreverse a{/*Tirando o sublinhado do link do href*/
     text-decoration: none; /*none = nenhum*/
     color: #ffffff; /*Cor da font, se voce tentar mudar a cor da palavra sem especificar a{}, não vai dar certo*/
 }
@@ -101,7 +103,7 @@ body{
 
 #slider img{/*Configurando as imagens*/
     position:absolute;/*Poe uma imagem por cima da outra, centralizando-as em um só lugar*/
-    width: 100%; /*Largura das imagns*/
+    width: 100%; /*Largura das imagens, o Width serve para recursividade, adequação a tela*/
     height: 100%; /*Altura das imagens*/
     object-fit:cover;/*Permite que as imagens não percam a qualidade*/
     opacity: 0;/*Desaparecimento das imagens*/
@@ -169,21 +171,29 @@ body{
     top: 483px; /*Posição deixo ou cima do quadrado de contagem de acessos*/
 }
 
-.contagem a{
+.contagem .cont{
     text-align: justify;/*Para justificar o texto*/
     font-family: 'roboto', sans-serif;/*Fonte*/
-    font-size: 11px;/*Tamanho da fonte do texto*/
+    font-size: 25px;/*Tamanho da fonte do texto*/
     line-height: 1.5; /**Espaçamento entre as linhas**/
     position: absolute; /*Posição*/
     left: 700px;/*Posição para esquerda*/
     right: 10px;/*Posição para direita*/
-    top: 25px;/*Posição para baixo*/
+    top: 10x;/*Posição para baixo*/
     color:#ffffff;/*Cor da fonte*/
+        
+}
+
+.numeros{/*Configurando a imagem de contagem de acesso*/
+    position:absolute;/*Posição*/
+    left: 50px;/*Posição para esquerda*/
+    top: 540px;/*Posição para baixo*/   
+    width: 100%; 
 }
 
 .participe{
     position: absolute;/*Posição*/
-    left: 710px;/*Posição para esquerda*/
+    left: 705px;/*Posição para esquerda*/
     right: 0px;/*Posição para direita*/
     top: 630px;/*Posição para baixo*/
     font-family: 'roboto';/*Fonte das letras*/
@@ -193,25 +203,141 @@ body{
 
 .participe a{
     color: #ffffff;/*Cor da font, se voce tentar mudar a cor da palavra sem especificar a{}, não vai dar certo*/
-
 }
 
 .bordaloc{
-    background: #d1c9c9;/*Configuração do quadrado branco da localização*/
+    background: #d1c9c9;/*Configuração do quadrado cinza da localização*/
     position: absolute;/*posição do quadrado da localização*/
-    width: 50%;/*Largura do quadrado de contagem de acessos, o 100% permite que a imagens se adeque perfeitamente ao tamanho da tela, permitindo diminuir ou aumentar seguind o estado da tela*/
+    width: 70%;/*Largura do quadrado de contagem de acessos, o 100% permite que a imagens se adeque perfeitamente ao tamanho da tela, permitindo diminuir ou aumentar seguindo o estado da tela*/
     height: 130px;/*Altura do quadrado de contagem de acessos*/
-    top: 665px;/*Posição para baixo*/
-    left: 150px;/*Posição para direita*/    
-    font-family: 'roboto' sans-serif;/*Fonte das letras*/
+    top: 665px;/*Posição para baixo*/ 
 }
 
-.bordaloc2{
-    background: #8f8888;/*Configuração do quadrado branco da localização*/
-    position: absolute;/*posição do quadrado da localização*/
-    width: 30%;/*Largura do quadrado de contagem de acessos, o 100% permite que a imagens se adeque perfeitamente ao tamanho da tela, permitindo diminuir ou aumentar seguind o estado da tela*/
-    height: 130px;/*Altura do quadrado de contagem de acessos*/
-    top: 665px;/*Posição para baixo*/
-    left: 750px;/*Posição para direita*/    
-    
+#textopesquisa{/*Configurando o texto "Descubra Trilhas" em cima da barra de pesquisa*/
+    position: absolute;/*posição da barra da pesquisa*/
+    color: #2b2b2b;/*Cord da fonte*/
+    font-family: 'roboto';/*Fonte das letras*/
+    font-size: 20px;/*Tamanho da fonte do texto*/
+    left: 35px;/*posição da barra de pesquisa para a esquerda*/
+    top: 10px;/*posição do texto*/
+    user-select: none; /*Para parar de selecionar, quando voce tentar copiar o texto*/
 }
+
+.pesquisa{
+    position: absolute; /*posição da barra da pesquisa*/
+    top: 720px;/*posição da barra de pesquisa*/
+    width: 60%;/*posição da barra de pesquisa*/
+    left: 230px;/*posição da barra de pesquisa para a esquerda*/
+    margin: 0px;/*espaçamento das laterais da barra*/
+    padding: 0px; /*Define uma a distância entre o conteúdo de um elemento e suas bordas*/
+}
+
+.pesq{/* Configurando a barra de pesquisa. Class acessa com . e id com #*/ 
+    border-color: #c8c3c3; /*Cor das bordas*/
+    border-radius: 5px;/*Arredondamento das bordas*/
+    width: 450px; /*Largura da barra de pesquisa*/
+    height: 40px; /*Altura da barra de pesquisa*/
+}
+
+.barrapesquisa { 
+    position: relative; /*posição da barra da pesquisa*/
+}
+
+.imglupa {/*configurando a imagem de lupa*/
+    position: absolute;/*Posição*/
+    width: 25px; /*Largura da barra de pesquisa*/
+    height: 25px; /*Altura da barra de pesquisa*/
+    left: 5px; /*Posição da imagem de lupa para a esquerda*/
+    top: 10px;/*Posição da imagem de lupa para baixo*/
+    user-select: none; /*Para parar de selecionar, quando voce tentar copiar o texto*/
+}
+
+.barrapesquisa input.pesq {/*Introduzindo a img lupa no input*/
+    padding-left: 30px; 
+}
+
+.textoexplorar{/*Configurando a frase "ou Explorar" que fica ao baixo da barra de pesquisa*/
+    position: absolute;/*posição*/
+    color: #2b2b2b;/*Cord da fonte*/
+    font-family: 'roboto';/*Fonte das letras*/
+    font-size: 13px;/*Tamanho da fonte do texto*/
+    left: 230px;/*posição do texto para esquerda*/
+    top: 750px;/*posição do texto para baixo*/
+    user-select: none; /*Para parar de selecionar, quando voce tentar copiar o texto*/
+}
+
+.textoexplorar a{ /*Configurando o link da frase "ou Explorar" que fica ao baixo da barra de pesquisa */
+    position: absolute;/*posição*/
+    color: #4b8c2a;/*Cord da fonte*/
+    font-family: 'roboto';/*Fonte das letras*/
+    font-size: 15px;/*Tamanho da fonte do texto*/
+    left: 30px;/*posição do texto para esquerda*/
+    top: 20px;/*posição do texto para baixo*/
+    text-decoration: none;/*none = nenhum*/
+}
+
+.textoexplorar a:hover{ /*Configurações de quando o cursor passar por cima da palavra*/
+    text-decoration: underline;
+}
+
+.CarregueSuaTrilha{/*Configurações a frase "Mostre suas trilhas favoritas"*/
+    position: absolute;/*posição*/
+    color:#2b2b2b;/*Cord da fonte*/
+    font-family: 'roboto', sans-serif;/*Fonte das letras*/
+    font-size: 13px;/*Tamanho da fonte do texto*/
+    left: 800px;/*posição do texto para esquerda*/
+    top: 670px;/*posição do texto para baixo*/
+    user-select: none; /*Para parar de selecionar, quando voce tentar copiar o texto*/
+}
+
+.BackGroundCarregueSuaTrilha{ /*Configurando o background que fica abaixo da frase "Mostre suas trilhas favoritas"*/
+    position: absolute; /*Posição*/
+    background-color: #d1c9c9;/*Cor do quadrado ao redor da letra*/
+    border: solid #4b8c2a;/*Cor da borda do quadrado*/
+    border-radius: 5px;/*Arredondamento das bordas do quadrado*/
+    top: 720px;/*posição do texto para baixo*/
+    left: 820px;/*posição do texto para esquerda*/
+    width: 200px; /*Largura da barra de pesquisa*/
+    height: 40px; /*Altura da barra de pesquisa*/
+    user-select: none; /*Para parar de selecionar, quando voce tentar copiar o texto*/
+    text-align:center;/*Centralização do texto no quadrado*/
+    cursor: pointer;/*Para aparecer o cursor*/
+}
+
+.BackGroundCarregueSuaTrilha a{/*Configurando o link dentro do background*/
+    position: relative;
+    user-select: none; /*Para parar de selecionar, quando voce tentar copiar o texto*/
+    text-decoration: none;/*none = nenhum*/
+    top: 10px;/*posição do texto para baixo*/
+    left: 10px;/*posição do texto para esquerda*/
+    color: #4b8c2a;/*Cord da fonte*/
+    font-size: 20px;/*Tamanho da fonte do texto*/
+}
+
+.nuvem{/*configurando a imagem da nuvem dentro do background*/
+    position: absolute;/*Posição*/
+    width: 25px; /*Largura da imagem*/
+    height: 25px; /*Altura da imagem*/
+    left: 5px; /*Posição da imagem para a esquerda*/
+    top: 10px;/*Posição da imagem para baixo*/
+    user-select: none; /*Para parar de selecionar, quando voce tentar copiar o texto*/
+}
+
+.BackGroundCarregueSuaTrilha:hover{/*Configurando a mudança de estado do background quando o cursor passar por cima*/
+    background-color: #4b8c2a;/*Cor do quadrado ao redor da letra*/
+    border: solid #4b8c2a;/*Cor da borda do quadrado*/
+    border-radius: 5px;/*Arredondamento das bordas do quadrado*/
+    width: 200px; /*Largura do background*/
+    height: 40px; /*Altura do background*/
+    user-select: none; /*Para parar de selecionar, quando voce tentar copiar o texto*/
+    cursor: pointer;/*Para aparecer o cursor*/
+}
+
+.BackGroundCarregueSuaTrilha a:hover{
+    color: #f2f5f0;/*Cord da fonte*/
+}
+
+.BackGroundCarregueSuaTrilha input.nuvem{
+    /*Inserindo a imagem da nuvem no background*/
+}
+
